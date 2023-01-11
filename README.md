@@ -28,13 +28,25 @@ It's the state of the project just after its initialization with `create-vue` co
 
 **Tag**: `vuejs-sample`
 
+#### Customized minimal
+
+Relatively to the official sample app, contains :
+
+* customized linter configuration,
+* fixed vitest configuration,
+* minimal code base
+
+**Tag**: `minimal`
+
 ### Setup
 
 * Fork this project, then clone it locally
 * Run `npm install`
+* I'll try to keep the dependencies up-to-date as often as possible, but to ensure you have the last versions of the dev dependencies you can run `npm update`
 * Checkout the branch related to the version you want (see "versions" section above)
-* Run `npm run test:unit` and verify tha
+* Run `npm run test:unit` and verify that all test pass
 * Run `npm run dev` and navigate to `http://localhost:5173` in your favorite web browser
+* If you want to start your project with a clean Git graph, you can then squash all the commits into a single one
 
 ## How was built this project?
 
@@ -51,3 +63,5 @@ Here are the responses given to the initialization command prompts (`create-vue@
 * **Add an End-to-End Testing Solution?** `No` (this might be useful as well. But, at first, unit tests will cover most part of the application: it can be added later)
 * **Add ESLint for code quality?** `Yes` (this is not strictly-speaking a requirement, but it has become kind of a personal habit to work with a linter)
 * **Add Prettier for code formatting?** `Yes` (same reason)
+
+Finally, some configuration fixes and preferences were applied (see the Git graph for more information).
